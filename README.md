@@ -1,6 +1,6 @@
 # dotfiles
 My person config / dotfiles
-Install 
+##Install 
 install homebrew 
 then `brew install dotdrop` 
 then `drotdrop install` 
