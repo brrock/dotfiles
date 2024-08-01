@@ -1,0 +1,49 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  f_bashrc:
+    src: bashrc
+    dst: ~/.bashrc
+    chmod: '644'
+  f_hyprland.conf:
+    src: config/hypr/hyprland.conf
+    dst: ~/.config/hypr/hyprland.conf
+  f_kitty.conf:
+    src: config/kitty/kitty.conf
+    dst: ~/.config/kitty/kitty.conf
+    chmod: '644'
+  f_config.ini:
+    src: config/waypaper/config.ini
+    dst: ~/.config/waypaper/config.ini
+  d_ags:
+    src: config/ags
+    dst: ~/.config/ags
+  d_gtk-3.0:
+    src: config/gtk-3.0
+    dst: ~/.config/gtk-3.0
+    chmod: '700'
+  d_icons:
+    src: icons
+    dst: ~/.icons
+    chmod: '755'
+  d_themes:
+    src: themes
+    dst: ~/.themes
+profiles:
+  studiopc:
+    dotfiles:
+    - f_bashrc
+    - f_hyprland.conf
+    - f_kitty.conf
+    - f_config.ini
+    - d_ags
+    - d_gtk-3.0
+    - d_icons
+    - d_themes
