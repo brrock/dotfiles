@@ -36,6 +36,9 @@ dotfiles:
   d_themes:
     src: themes
     dst: ~/.themes
+  f_starship.toml:
+    src: config/starship.toml
+    dst: ~/.config/starship.toml
 profiles:
   studiopc:
     dotfiles:
@@ -47,3 +50,4 @@ profiles:
     - d_gtk-3.0
     - d_icons
     - d_themes
+    - f_starship.toml
