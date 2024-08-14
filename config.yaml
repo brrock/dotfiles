@@ -22,9 +22,6 @@ dotfiles:
   f_config.ini:
     src: config/waypaper/config.ini
     dst: ~/.config/waypaper/config.ini
-  d_ags:
-    src: config/ags
-    dst: ~/.config/ags
   d_gtk-3.0:
     src: config/gtk-3.0
     dst: ~/.config/gtk-3.0
@@ -39,6 +36,12 @@ dotfiles:
   f_starship.toml:
     src: config/starship.toml
     dst: ~/.config/starship.toml
+  d_ags:
+    src: config/ags
+    dst: ~/.config/ags
+  d_gbar:
+    src: config/gBar
+    dst: ~/.config/gBar
 profiles:
   studiopc:
     dotfiles:
@@ -46,8 +49,9 @@ profiles:
     - f_hyprland.conf
     - f_kitty.conf
     - f_config.ini
-    - d_ags
     - d_gtk-3.0
     - d_icons
     - d_themes
     - f_starship.toml
+    - d_ags
+    - d_gbar

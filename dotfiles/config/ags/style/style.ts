@@ -48,7 +48,7 @@ const variables = () => [
     $("scheme", scheme),
     $("padding", `${padding}pt`),
     $("spacing", `${spacing}pt`),
-    $("radius", `${radius}px`),
+    $("radius", `9px`),
     $("transition", `${options.transition}ms`),
 
     $("shadows", `${shadows}`),
@@ -62,7 +62,7 @@ const variables = () => [
     $("border-color", `transparentize(${t(dark.border, light.border)}, ${border.opacity.value / 100})`),
     $("border", "$border-width solid $border-color"),
 
-    $("active-gradient", `linear-gradient(to right, ${t(dark.primary.bg, light.primary.bg)}, darken(${t(dark.primary.bg, light.primary.bg)}, 4%))`),
+    $("active-gradient", `linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);`),
     $("shadow-color", t("rgba(0,0,0,.6)", "rgba(0,0,0,.4)")),
     $("text-shadow", t("2pt 2pt 2pt $shadow-color", "none")),
     $("box-shadow", t("2pt 2pt 2pt 0 $shadow-color, inset 0 0 0 $border-width $border-color", "none")),

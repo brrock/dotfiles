@@ -6,7 +6,7 @@ window#launcher .launcher {
 
     .quicklaunch {
         @include spacing;
-
+         opacity: 0.5;
         button {
             @include button($flat: true);
             padding: $padding;
